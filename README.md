@@ -11,5 +11,8 @@
 ## Instalação e Execução
 - Baixar o Python
 - Clonar/baixar o App
+  * ```sh 
+      $git clone https://github.com/JesuisOriginal/ManGUINet-v3.git
+      ```
 - navegar ate a pasta contendo o App.py
 - ```sh $chmod +x App.py ```

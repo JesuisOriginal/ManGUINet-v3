@@ -66,30 +66,30 @@ class Cursor(Image):
         self._keyboard.bind(on_key_down=self._on_keyboard_down)
 
 
-
-class InitialScreen(Widget):
-    layout = AnchorLayout( anchor_x='right', anchor_y='bottom' )
-    i = 0
-    Widget.size(880, 650)
-    Widget.size_hint = (None, None)
-    anim = Animation(x=100, y=100)
-    anim.start(LogoAnimation)
-    def draw_background(self, *args):
-        Widget.canvas.before.clear()
-        with Widget.canvas.before:
-            Color(.4, .4, .4, 1)
-            i = 1
-            texture = CoreImage(("image%d.png") % i).texture
-            texture.wrap = 'repeat'
-            nx = float(Widget.width) / texture.width
-            ny = float(Widget.height) / texture.height
-            Rectangle(pos=Widget.pos, size=Widget.size, texture=texture,
-                    tex_coords=(0, 0, nx, 0, nx, ny, 0, ny))
+''' Uncomment After Debugging '''
+# class InitialScreen(Widget):
+#     layout = AnchorLayout( anchor_x='right', anchor_y='bottom' )
+#     i = 0
+#     Widget.size(880, 650)
+#     Widget.size_hint = (None, None)
+#     anim = Animation(x=100, y=100)
+#     anim.start(LogoAnimation)
+#     def draw_background(self, *args):
+#         Widget.canvas.before.clear()
+#         with Widget.canvas.before:
+#             Color(.4, .4, .4, 1)
+#             i = 1
+#             texture = CoreImage(("image%d.png") % i).texture
+#             texture.wrap = 'repeat'
+#             nx = float(Widget.width) / texture.width
+#             ny = float(Widget.height) / texture.height
+#             Rectangle(pos=Widget.pos, size=Widget.size, texture=texture,
+#                     tex_coords=(0, 0, nx, 0, nx, ny, 0, ny))
 
 
 class ManGUINet(App):
     def build(self):
-        pane1 = InitialScreen()
+        pane1 = LogoAnimation()
         return pane1
 
 

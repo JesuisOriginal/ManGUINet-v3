@@ -1,7 +1,9 @@
 # ManGUINet-v3
+<img src="image0.png" alt="drawing" width="600" height="200" />
+
 ## Sobre
 - Logo
-  * <img src="image0.png" alt="drawing" width="450" height="200"/>
+  * <img src="image3.png" alt="drawing" width="450" height="200"/>
 - Envolvidos
   * <img src="image1.png" alt="drawing" width="200" />
   * <img src="image2.png" alt="drawing" width="200" />

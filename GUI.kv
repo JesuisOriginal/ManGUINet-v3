@@ -1,0 +1,28 @@
+#:kivy 1.0.9
+
+<LogoAnimation>:
+    image_num: 0
+    pos: self.pos
+    source: "animated%d.png" % int(self.image_num)
+
+<RootScreen>:
+    InitPane:
+    MainPane:
+
+<InitPane>:
+    name: "init"
+    image_num: 1
+    canvas:
+        Rectangle:
+                pos: self.pos
+                size: self.size
+                source: 'image%d.png' % int(self.image_num)
+            
+<MainPane>:
+    name: "mpane"
+    image_num: 1
+    canvas:
+        Rectangle:
+                pos: self.pos
+                size: self.size
+                source: 'image%d.png' % int(self.image_num)

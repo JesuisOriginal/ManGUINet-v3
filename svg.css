@@ -1,0 +1,20 @@
+body{
+  background-color:#2a1c4f
+}
+.hello {
+    stroke-width: 1px;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 0;
+    
+    animation: 100s write;
+}
+
+@keyframes write {
+    0% {
+      stroke-dashoffset: 600; 
+    }
+  100%{
+      stroke-dashoffset: 0;
+  }
+    
+}
